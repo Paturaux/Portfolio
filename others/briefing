@@ -1,0 +1,24 @@
+====================
+home
+====================
+cv
+skills
+jobs
+etudes
+
+projets
+contact
+lien(fb, in, ...)
+
+
+url = www.domaine.com/page-action.html
+
+www.domaine.com
+www.domaine.com/home.html
+www.domaine.com/projets.html
+www.domaine.com/contact.html
+www.domaine.com/ERROR404.html
+
+Requis :
+    - 'short open tags' activ for PHP
+    - 'rewrite_module' activ for Apache-->

@@ -1,0 +1,348 @@
+@charset "utf-8";
+
+/* ///////////////////////// GENERAL ///////////////////////// */
+* {
+    margin: 0;
+    padding: 0;
+    outline: none;
+    vertical-align:baseline;
+    text-decoration: none;
+    border: none;
+    resize: none;
+    list-style: none;
+    outline: none;
+}
+a {
+    color: #989898;
+}
+a:hover {
+    color: #eee;
+}
+textarea {
+    resize: vertical;
+}
+html {
+    font-family: 'Microsoft YaHei UI Light', 'kalinga', 'century gothic', sans-serif;
+    color: #989898;
+    font-size: 0.875em;  /* 14px */
+    background: #1a1a1a url(../img/background.jpg) no-repeat center center fixed;
+    background-size: cover;
+}
+body {
+    border-top: 4px solid #00cbcb;
+    border-bottom: 4px solid #00cbcb;
+    margin: 0px auto;
+    width: 90%;
+    height: 100%;
+    min-width: 0px;
+    max-width: 1280px;
+}
+section {
+    margin: 15px auto;
+}
+
+/* ///////////////////////// HEADER ///////////////////////// */
+header {
+    width: 100%;
+    height: 98px;
+    background-color: #181818;
+}
+img#logo {
+    margin-left: 5%;
+    margin-top: 20px;
+}
+nav {
+    float: right;
+    height: 100%;
+}
+nav ul {
+    height: 100%;
+    width: 100%;
+    list-style: none;
+}
+nav ul li {    
+    float: left;
+    height: 100%;
+    width: 108px;
+    border-left: 1px solid #333;
+    border-right: 1px solid #222;
+}
+nav ul li:hover {
+    background-color: #111;
+    color: #ddd;
+}
+nav ul li a {
+    display: block;
+    text-transform: uppercase;
+    text-align: center;
+    height: 100%;
+    color: #b8b8b8;
+    font-family: 'titi-bold', sans-serif;
+    font-size: 0.875em;
+    line-height: 160px;
+    background: center 40% no-repeat;   
+}
+nav ul li a.active {
+    height: 96px;
+    border-bottom: 2px solid #00cbcb;
+}
+nav ul li a#home { background-image: url(../img/home.png); }
+nav ul li a#projets { background-image: url(../img/projets.png); }
+nav ul li a#contact { background-image: url(../img/contact.png); }
+nav ul li a#reseaux { background-image: url(../img/reseaux.png); }
+
+/* ///////////////////////// HOME ///////////////////////// */
+section#home article {
+    background-color: #181818;
+    padding: 10px;
+    margin: 10px auto;
+}
+section#home article h1 {
+    font-size: 2em;
+    font-weight: lighter;
+    text-transform: uppercase;
+    color: #00cbcb;
+}
+section#home article#keywords {
+}
+section#home article#presentation {
+}
+section#home article#experiences {
+}
+section#home article#experiences div.block {
+    margin: 10px auto 0px auto;
+}
+section#home article#experiences div.block span.chip {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    margin: 2px 10px;
+    border-radius: 15px;
+    background-color: #00cbcb;
+}
+section#home article#experiences div.block span.entitled {
+    font-size: 1.500em;
+    font-weight: lighter;
+    color: #ddd;
+}
+section#home article#experiences div.block span.date {
+    font-style: italic;
+}
+section#home article#experiences div.block span.description {
+    display: block;
+    margin: 5px;
+}
+section#home article#studies {
+    position: relative;
+    width: 50%;
+    height: auto;
+    margin-right: 15px;
+}
+section#home article#studies div.timeline-line {
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: 0px auto;
+    width: 5px;
+    height: 100%;
+    background-color: #fff;
+    border-radius: 10px;
+}
+section#home article#studies div.timeline-block {
+    position: relative;
+    width: 100%;
+    height: auto;
+}
+section#home article#studies div.timeline-block div.timeline-date {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+    color: #333;
+    font-size: 0.813em;
+    background-color: #ddd;
+    border: 5px solid #fff;
+    border-radius: 100px;
+}
+section#home article#studies div.timeline-block div.timeline-panel {
+    width: 40%;
+    height: auto;
+    margin: 15px 0px;
+}
+section#home article#studies div.timeline-block div.timeline-panel-left {
+    border-left: 3px solid #00cbcb;
+}
+section#home article#studies div.timeline-block div.timeline-panel-right {
+    margin-left: 60%;
+    margin-right: 3px;
+    border-right: 3px solid #00cbcb;
+}
+section#home article#skills {
+    width: 50%;
+    height: 100px;
+}
+section#home article#technos {
+    width: 50%;
+    height: 100px;
+}
+section#home article#cv {
+    width: 300px;
+    padding: 0;
+}
+section#home article#cv:hover {
+    background-color: #222;
+}
+section#home article#cv a {
+    display: block;
+    height: 50px;
+    line-height: 50px;
+    padding: 20px;
+    text-align: center;
+    font-size: 1.5em;
+    color: #00cbcb;
+}
+section#home article#cv a img {
+    margin-bottom: -13px;
+    margin-right: 10px;
+}
+
+/* ///////////////////////// CONTACT ///////////////////////// */
+section#contact {
+    padding: 15px;
+    background-color: #111;
+}
+section#contact article {
+    width: 40%;
+    min-width: 200px;
+    margin: 15px auto;
+}
+section#contact article .input {
+    width: 100%;
+    margin: 0px -15px 20px -15px;
+    padding: 0px 15px;
+    line-height: 40px;
+    color: #eee;
+    background: none;
+    border-bottom: 1px solid #666;
+    border-radius: 1px 1px 0px 0px;
+}
+section#contact article textarea {
+    width: 100%;
+    margin: 0px -15px;
+    padding: 10px 15px;
+    color: #eee;
+    background: none;
+    border: 1px solid #666;
+}
+section#contact article textarea:hover,
+section#contact article .input:hover {
+    border-color: #00cbcb;
+}
+section#contact article textarea:focus,
+section#contact article .input:focus {
+    border: #00cbcb;
+    color: #333;
+    background: #eee;
+}
+
+/* ///////////////////////// ERROR404 ///////////////////////// */
+div#error404 {
+    width: 100%;
+    height: auto;
+    background: url(../img/error404.png) no-repeat center center fixed;
+    background-size: cover;
+}
+
+/* ///////////////////////// FOOTER ///////////////////////// */
+footer {
+    width: 100%;
+    height: auto;
+    padding-top: 20px;
+    font-size: 0.813em;
+    background-color: #111;
+}
+footer div#footer_left {
+    float: left;
+    width: 30%;
+    line-height: 40px;
+    text-align: center;
+    word-spacing: 25px;
+    text-transform: uppercase;
+}
+footer div#footer_center {
+    float: left;
+    width: 40%;
+    line-height: 40px;
+}
+footer div#footer_center img {
+    margin: 2px 10px -2px 15%;
+}
+footer div#footer_right {
+    float: right;
+    width: 30%;
+    text-align: center;
+}
+footer div#footer_right img {
+    margin: 17px auto;
+}    
+footer div#footer_bottom {
+    margin-top: 90px;
+    width: 100%;
+    text-align: center;
+}
+
+/* ------------------------------------------------------------ */
+/* Petits écrans */
+/* ------------------------------------------------------------ */
+@media only screen and (max-width: 820px) {
+    /* ///////////////////////// HEADER ///////////////////////// */
+    header {
+        height: auto;
+        overflow: hidden;
+
+    }
+    img#logo {
+        display: block;
+        margin: 5px auto;
+    }
+    nav {
+        width: 100%;
+        border-top: 1px solid #222;
+        padding-bottom: -1px;
+
+    }
+    nav ul li {
+        width: 25%;
+        margin: auto -1px;
+    }
+    nav ul li a {
+        line-height: 40px;
+        background: none !important;
+    }
+    nav ul li a.active {
+        line-height: 38px;
+        height: 38px;
+        border-bottom: 2px solid #00cbcb;
+    }
+
+    /* ///////////////////////// HOME ///////////////////////// */
+    section#home article#experiences div.block span.separator {
+        display: none;
+    }
+    section#home article#experiences div.block span.date {
+        display: block;
+        margin-top: 5px;
+        margin-left: 30px;
+    }
+
+    /* ///////////////////////// FOOTER ///////////////////////// */
+    footer div {
+        width: 100% !important;
+    }
+}

@@ -1,0 +1,14 @@
+Options +FollowSymlinks 
+RewriteEngine on
+
+## xxx-yyy.html --> index.php?page=xxx&action=yyy
+#RewriteRule ^([1-9a-zA-Z\-]+)/([1-9a-zA-Z\-\/]+)\.html$ index.php?page=$1&action=$2 [L]
+
+# xxx.html --> index.php?page=xxx
+RewriteRule ^([1-9a-zA-Z\-]+).html$ index.php?page=$1 [L]
+
+# index.php?page=home
+RewriteRule ^$ index.php?page=home [L]
+
+# ERROR 404
+ErrorDocument 404 /mywebsite/index.php?page=error404
